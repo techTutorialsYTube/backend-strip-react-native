@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "outDir": "./app",
+    "rootDir": "./src"
+  }
+}
