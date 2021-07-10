@@ -5,6 +5,7 @@
     "sourceMap": false,
     "skipLibCheck": true,
     "outDir": "./app",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "resolveJsonModule": true
   }
 }
