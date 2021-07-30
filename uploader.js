@@ -1,6 +1,6 @@
 var admin = require('firebase-admin');
 
-var serviceAccount = require('./files/service_key.json');
+var serviceAccount = require('./src/files/service_key.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -9,7 +9,7 @@ admin.initializeApp({
 const firestore = admin.firestore();
 const path = require('path');
 const fs = require('fs');
-const directoryPath = path.join(__dirname, 'files');
+const directoryPath = path.join(__dirname, 'src/files/firestore');
 
 fs.readdir(directoryPath, function (err, files) {
   if (err) {
@@ -19,7 +19,7 @@ fs.readdir(directoryPath, function (err, files) {
   files.forEach(function (file) {
     var lastDotIndex = file.lastIndexOf('.');
 
-    var menu = require('./files/' + file);
+    var menu = require('./src/files/firestore/' + file);
 
     menu.forEach(function (obj) {
       firestore
