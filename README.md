@@ -1,7 +1,7 @@
 # Backend for ecommerce app
 
 This is just a starter repo for stripe backend integration.
-Check out the video for the code
+Check out the video for the code [Youtube](https://youtu.be/ElgfjrWn7Mg)
 
 ## Firestore service key for admin access
 
